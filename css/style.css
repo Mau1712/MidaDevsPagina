@@ -1,0 +1,242 @@
+#video-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.capaPortada {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}
+
+.tittleIndex {
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+}
+
+.tittleIndex h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: aliceblue;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.521);
+
+    text-align: center;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.tittleIndex p {
+
+    color: aliceblue;
+    text-align: center;
+    padding: 5px;
+    font-weight: 400;
+}
+
+.boxButton {
+    justify-content: center;
+    align-items: center;
+}
+
+.menuButton {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    color: rgb(255, 255, 255) !important;
+}
+
+.menuButton img {
+    width: 50px;
+}
+
+
+/* offcanva nav*/
+
+::-webkit-scrollbar {
+    width: 2px; /* Ancho de la barra de desplazamiento */
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent; /* Color del fondo de la barra de desplazamiento */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); /* Color del "pulgar" de la barra de desplazamiento */
+    border-radius: 3px; /* Borde redondeado del "pulgar" */
+  }
+
+.offcanvas-header {
+    background-color: #1c1c1d;
+}
+
+.offcanvas-body {
+    background-color: #1c1c1d;
+}
+
+.navController {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.navController div {
+    background-color: rgba(0, 0, 0, 0.356);
+    
+
+    box-shadow: 0px 0px 15px -8px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 0px 0px 15px -8px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 0px 0px 15px -8px rgba(255, 255, 255, 0.75);
+}
+
+.navController div:hover {
+    background-color: aliceblue;
+}
+
+.navController a {
+    width: 100%;
+}
+
+.navController p {
+    margin: 0%;
+    padding: 35px;
+}
+
+.navContent {
+    flex-direction: column;
+}
+
+.navContent a {
+    text-decoration: none;
+
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: aliceblue;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.521);
+    font-size: 20px;
+    padding: 5px;
+}
+
+.navContent p:hover {
+    color: #1c1c1d;
+    font-weight: 600;
+    text-shadow: none;
+}
+
+
+/* ----------------- */
+
+
+
+
+.boxLogo {
+    position: relative;
+    top: 35px;
+    z-index: 2;
+    width: 200px !important;
+
+
+    background-color: rgba(240, 248, 255, 0.479);
+    border-radius: 100%;
+
+}
+
+.boxLogo img {
+    width: 200px !important;
+}
+
+.logoIndex {
+    justify-content: center;
+    align-items: center;
+}
+
+.boxRedes {
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.red {
+    background-color: #ffffff96;
+    padding: 6px;
+    margin: 6px;
+    border-radius: 100%;
+}
+
+.red img {
+    width: 60px;
+}
+
+.red:hover {
+    background-color: #3d597b;
+}
+
+
+
+@media screen and (min-width: 1920px) {
+    .tittleIndex h2 {
+        font-size: 120px;        
+    }
+
+    .tittleIndex p {
+        font-size: 25px;
+    }
+
+    .menuButton img {
+        width: 100px;
+    }
+
+    .boxLogo {
+        width: 350px !important;
+    }
+
+    .boxLogo img {
+        width: 350px !important;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .boxLogo {
+        width: 250px;
+
+    }
+
+    .boxLogo img {
+        width: 250px;
+    }
+
+    .red img {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .offcanvas-start {
+        width: 100% !important;
+    }
+
+    .navRedes {
+        margin-top: 100%;
+    }
+
+    .copyright {
+        margin-top: 5px;
+    }
+}
